@@ -6,4 +6,4 @@ const cors = (request, response, next) => {
     next();
 };
 
-export { cors };
+module.exports = { cors };

@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     res.send('OK');
 })
 
-require('./controllers/transactionController')(app);
+require('./src/controllers/transactionController')(app);
 
 app.listen(PORT, () => {
     console.log(`Server is running port --> ${PORT}`);

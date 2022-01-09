@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -12,7 +14,7 @@ app.get('/', (req, res) => {
     res.send('OK');
 })
 
-require('./src/controllers/transactionController')(app);
+require('./controllers/transactionController')(app);
 
 app.listen(PORT, () => {
     console.log(`Server is running port --> ${PORT}`);

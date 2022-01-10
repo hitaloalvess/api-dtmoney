@@ -13,7 +13,7 @@ router.get('/', async(req, res) => {
     }
 })
 
-router.post('/register', async(req, res) => {
+router.post('/', async(req, res) => {
     try {
         const transaction = await Transaction.create(req.body);
 
